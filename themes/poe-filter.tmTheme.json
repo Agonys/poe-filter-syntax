@@ -1,0 +1,16 @@
+{
+	"name": "FilterTheme",
+	"type": "dark",
+	"colors": {
+		"editor.foreground": "#D4D4D4",
+		"editor.background": "#1E1E1E"
+	},
+	"tokenColors": [
+		{
+			"scope": "constant.language.poe-filter",
+			"settings": {
+				"foreground": "#BADA55"
+			}
+		}
+	]
+}

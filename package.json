@@ -1,0 +1,25 @@
+{
+  "name": "poe-filter-syntax",
+  "displayName": "PoE Filter Syntax",
+  "description": "Syntax Highlighter for Path of Exile filter files",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "poe-filter",
+      "aliases": ["PoE Filter", "poe-filter"],
+      "extensions": [".filter"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "poe-filter",
+      "scopeName": "source.poe-filter",
+      "path": "./syntaxes/poe-filter.tmLanguage.json"
+    }]
+  }
+}

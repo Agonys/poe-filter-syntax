@@ -1,0 +1,38 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "PoE Filter",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.poe-filter",
+					"match": "\\b(if|while|for|return)\\b"
+				},
+				{
+					"name": "constant.language.poe-filter",
+					"match": "\\b(Class|Rarity|SetTextColor|SetBorderColor|SetBackgroundColor|PlayEffect|MinimapIcon|SetFontSize|DisableDropSound|CustomAlertSound|BaseType|BaseArmour|Sockets)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.poe-filter",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.poe-filter",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.poe-filter"
+}
